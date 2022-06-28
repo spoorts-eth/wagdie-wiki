@@ -10,3 +10,4 @@ ENV PGSSLMODE no-verify
 CMD ["node", "server"]
 # Overwrite ssl.js (see the comment in the file)
 COPY overrides/ssl.js server/controllers/ssl.js
+COPY overrides/favicons clients/static/favicons
